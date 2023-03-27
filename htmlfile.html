@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_4-of-4">
+            <div class="slds-scrollable_y" style="height:12rem;width:100%">
+                <lightning-card variant="Narrow">
+                    <p class="slds-p-horizontal_small">
+                        <lightning-datatable key-field="id" data={lstAccounts}
+                            show-row-number-column hide-checkbox-column columns={accountColumns} onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </p>
+                </lightning-card>
+            </div>
+        </div>
+    </div> 
+</template>
